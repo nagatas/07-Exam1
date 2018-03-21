@@ -139,7 +139,7 @@ def run_test_problem1a():
     expected = 1000 * (1 + 1000) // 2
     answer = problem1a(1, 1000, (9 * 9 * 9) + 1)
     print()
-    print('Test 10 is: problem1a(1, 1000, (9 * 9 * 9) + 2)')
+    print('Test 10 is: problem1a(1, 1000, (9 * 9 * 9) + 1))')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
@@ -147,7 +147,7 @@ def run_test_problem1a():
     expected = (1000 * (1 + 1000) // 2) - 999
     answer = problem1a(1, 1000, (9 * 9 * 9))
     print()
-    print('Test 11 is: problem1a(1, 1000, (9 * 9 * 9) + 1)')
+    print('Test 11 is: problem1a(1, 1000, (9 * 9 * 9))')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
@@ -155,7 +155,7 @@ def run_test_problem1a():
     expected = 91405
     answer = problem1a(1, 1000, 1)
     print()
-    print('Test 12 is: problem1a(1, 1000, 1')
+    print('Test 12 is: problem1a(1, 1000, 1)')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
