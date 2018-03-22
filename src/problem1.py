@@ -2,8 +2,8 @@
 Exam 1, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Nagata Satomi.  March 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -139,7 +139,7 @@ def run_test_problem1a():
     expected = 1000 * (1 + 1000) // 2
     answer = problem1a(1, 1000, (9 * 9 * 9) + 1)
     print()
-    print('Test 10 is: problem1a(1, 1000, (9 * 9 * 9) + 1))')
+    print('Test 10 is: problem1a(1, 1000, (9 * 9 * 9) + 2)')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
@@ -147,7 +147,7 @@ def run_test_problem1a():
     expected = (1000 * (1 + 1000) // 2) - 999
     answer = problem1a(1, 1000, (9 * 9 * 9))
     print()
-    print('Test 11 is: problem1a(1, 1000, (9 * 9 * 9))')
+    print('Test 11 is: problem1a(1, 1000, (9 * 9 * 9) + 1)')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
@@ -155,7 +155,7 @@ def run_test_problem1a():
     expected = 91405
     answer = problem1a(1, 1000, 1)
     print()
-    print('Test 12 is: problem1a(1, 1000, 1)')
+    print('Test 12 is: problem1a(1, 1000, 1')
     print('  Expected:', expected)
     print('  Actual:  ', answer)
 
@@ -166,9 +166,27 @@ def run_test_problem1a():
 #    **  the appropriate function(s) that are defined above.
 ###############################################################################
 def problem1a(a, b, threshold):
+    sum=0
+    if a//100 != 0 :
+      #for k in range(b-a):
+       #   a+=k
+       return ((a-100*(a//100))//10)*(a//100)*(a-(10*(a//10)))
+      # sum=a
+    elif a//10 != 0 :
+      return (a//10)*(a-(10*(a//10)))
+    elif a//10 == 0 :
+        #for k in range(b-a):
+         #   if sum <= threshold:
+          #      sum= sum + a
+      return a
+
+    #for k in range(b-a):
+     # if (a//10)* <= 14
+      #  sum = sum + (k+a)
+    #return sum
     """
     What comes in:
-      -- Positive integers a and b with a <= b
+      -- Positive integers a and b with a <= 
       -- A number ('threshold')
     What goes out:  Returns the sum of the numbers from a to b, inclusive,
       whose product-of-digits is strictly less than the given threshold.

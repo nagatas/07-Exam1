@@ -2,8 +2,8 @@
 Exam 1, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Satomi Nagata.  March 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -82,6 +82,7 @@ def run_test_problem2():
 #
 ###############################################################################
 def problem2(line1, line2, thickness, win):
+    def rg.Line
     """
     See   problem2_pictures.pdf   for pictures that may help you
     better understand the following specification:
